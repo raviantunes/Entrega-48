@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Multiplication Table</title>
+    </head>
+
+    <body>
+        <h1>Multiplication Table</h1>
+        <script>
+
+            function multiplicationTable10x10() {
+                let result = [];
+                for (let l = 0; l <= 10; l++){
+                    result.push([])
+                    for(let c=0; c <= 10; c++){
+                    result[l].push(l*c)
+                    }
+                    
+                 }
+                
+                console.table(result)
+            }
+
+
+            
+            function multiplicationTable(number){
+                let result = []
+                for(let l=0; l<=number; l++){
+                    result.push([])
+                    for(let c=0; c<=number; c++){
+                        result[l].push(l*c)
+                    }
+                
+                }
+
+                console.table(result)
+            }
+        </script>
+    </body>
+</html>
